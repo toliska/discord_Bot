@@ -25,7 +25,7 @@ module.exports = (client) => {
   firstMessage(client, channelId, emojiText, reactions)
 
   const handleReaction = (reaction, user, add) => {
-    if (user.id === '785611158581280789') { //803512460060786689
+    if (user.id === '785611158581280789') { //to id tou bot gia na ekserite
       return 
     }785611158581280789
 
@@ -40,11 +40,11 @@ module.exports = (client) => {
 
     const role = guild.roles.cache.find((role) => role.name === roleName)
     const member = guild.members.cache.find((member) => member.id === user.id)
-    const channelId = '808086667360600105' // done
+    const channelId = '808086667360600105' // to id gia ta logs tou on duty 
 
 
 
-    const embedd = new Discord.MessageEmbed()
+    const embedd = new Discord.MessageEmbed() //embed log gia to on duty
     .setColor('#0099ff')
 	  .setTitle('On duty')
 	.setDescription(`Ο  ${
@@ -60,7 +60,7 @@ module.exports = (client) => {
 
 
 
-  const embeddd = new Discord.MessageEmbed()
+  const embeddd = new Discord.MessageEmbed() //embed log gia to off duty 
     .setColor('#0099ff')
 	  .setTitle('Off duty')
 	.setDescription(`Ο  ${
